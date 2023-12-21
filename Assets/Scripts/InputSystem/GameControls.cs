@@ -15,10 +15,10 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public partial class @InputActions: IInputActionCollection2, IDisposable
+public partial class GameControls: IInputActionCollection2, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @InputActions()
+    public GameControls()
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""InputActions"",
@@ -154,8 +154,8 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Walk;
     public struct PlayerActions
     {
-        private @InputActions m_Wrapper;
-        public PlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+        private GameControls m_Wrapper;
+        public PlayerActions(GameControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Walk => m_Wrapper.m_Player_Walk;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }

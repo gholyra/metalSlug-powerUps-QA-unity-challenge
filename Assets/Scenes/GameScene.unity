@@ -288,6 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1772356358}
+  - component: {fileID: 1772356359}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -310,6 +311,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1116291609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1772356359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772356357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bdb5ff01bb4439458adb9d109b0290b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138574232
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4ac2ffa843f0043853b86522725394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputManager: {fileID: 1772356359}
+  moveVelocity: 3
 --- !u!70 &2138574234
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -392,7 +407,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -465,7 +480,7 @@ Transform:
   m_GameObject: {fileID: 2138574232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.3, y: -2.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
