@@ -26,7 +26,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Start()
     {
-        throw new NotImplementedException();
+        
     }
 
     private void Update()
