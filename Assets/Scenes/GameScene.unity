@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManager: {fileID: 1772356359}
-  moveVelocity: 3
+  moveVelocity: 6
 --- !u!70 &2138574234
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
