@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private Transform transform;
     private Rigidbody2D rigidBody;
+    private SpriteRenderer playerSprite;
 
     private Vector2 moveDirection;
     
@@ -40,14 +41,14 @@ public class PlayerBehaviour : MonoBehaviour
 
         // isWalking = moveDirection.x != 0;
 
-        // if (moveDirection.x > 0)
-        // {
-        //     playerSprite.flipX = false;
-        // }
-        // else if (moveDirection.x < 0)
-        // {
-        //     playerSprite.flipX = true;
-        // }
+        if (moveDirection.x > 0)
+        {
+            playerSprite.flipX = false;
+        }
+        else if (moveDirection.x < 0)
+        {
+            playerSprite.flipX = true;
+        }
 
         transform.Translate(moveDirection * moveVelocity * Time.deltaTime);
     }
