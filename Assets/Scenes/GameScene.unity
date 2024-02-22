@@ -590,17 +590,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1739757560551565046, guid: ccd3922e7a0a5074fb5104db2b1afb66, type: 3}
-      propertyPath: newWeapon
-      value: 
-      objectReference: {fileID: 77036310592759187, guid: 7c8255e9f14011240897a35b8ec22211, type: 3}
-    - target: {fileID: 1739757560551565046, guid: ccd3922e7a0a5074fb5104db2b1afb66, type: 3}
       propertyPath: actualWeapon
       value: 
       objectReference: {fileID: 1775384818}
-    - target: {fileID: 2261053165647351092, guid: ccd3922e7a0a5074fb5104db2b1afb66, type: 3}
-      propertyPath: m_VertexColorAlwaysGammaSpace
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2904473335813513834, guid: ccd3922e7a0a5074fb5104db2b1afb66, type: 3}
       propertyPath: m_Name
       value: HCrate
