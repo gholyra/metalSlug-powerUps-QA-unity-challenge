@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-
     public static PlayerBehaviour Instance;
 
     [SerializeField] private InputManager inputManager;
@@ -23,11 +22,6 @@ public class PlayerBehaviour : MonoBehaviour
         }
         transform = GetComponent<Transform>();
         rigidBody = GetComponent<Rigidbody2D>();
-    }
-
-    private void Start()
-    {
-        
     }
 
     private void Update()

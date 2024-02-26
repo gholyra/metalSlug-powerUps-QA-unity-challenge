@@ -1,11 +1,7 @@
-using System;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class HeavyMachineGunPowerUp : MonoBehaviour
 {
-
     [SerializeField] private Transform actualWeapon;
     [SerializeField] private Transform newWeapon;
 
@@ -14,6 +10,7 @@ public class HeavyMachineGunPowerUp : MonoBehaviour
         if (collision.gameObject.tag.Contains("Player"))
         {
             Transform weaponAnchor = actualWeapon.parent;
+            PlayerWeapon.Instance.isPistolTheWeapon = false;
             Instantiate(newWeapon, weaponAnchor);
             Destroy(actualWeapon.gameObject);
         }
